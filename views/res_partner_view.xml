@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="ms_core_view_partner_form">
+	    	<field name="name">res.partner.form_inherit</field>
+	    	<field name="model">res.partner</field>
+	    	<field name="inherit_id" ref="base.view_partner_form"/>
+	    	<field name="arch" type="xml">
+				<xpath expr="//div[@class='o_row']" position="after">
+	            	<div>
+	            		<div id="misyl_partner_box" name="misyl_box" class="misyl_partner"></div>
+	            		<div class = "oe_clear"></div>
+	            	</div>
+	            </xpath>
+			</field>        
+        </record>        
+    </data>
+</openerp>
+
+
+
